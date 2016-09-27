@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Monk's Cafe - The Coffee Shop</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPgz-jeUPH4f_M0oWtlhe8Xw-DPwDf7bo&callback=initMap"></script>
+  </head>
+
+  <body>
+  <div id="bg-wrapper">
+  <div id="content-wrapper">
+  <div id="header">
+  <h1>Monk's Cafe</h1>
+  <h3>"The Coffee Shop"</h3>
+  <img src="img/toms-restaurant-960w.jpg" class="header-banner">
+  </div>
+  <div id="reservations-wrapper">
+  <div id="make-reservation">	
+  <h4>Make A Reservation</h4>
+  <form class="reservation-form">
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Day">
+    <button>Confirm</button>
+</form>
+  </div>
+  <div id="existing-reservations">
+  <h4>Existing Reservations</h4>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Date</th>
+  </tr>
+  <tr>
+   <td><!--This is where the names go-->&nbsp;</td><td><!--This is where the dates go-->&nbsp;</td>
+    
+  </tr>
+</table>
+</table>
+
+  </div>
+  </div>
+  <script type="text/javascript">
+  	function initMap() {
+  var map = new google.maps.Map(document.getElementById('dine-with-us'), {
+    center: {lat: 40.8054491, lng: -73.9654415},
+    zoom: 20
+  });
+  var marker = new google.maps.Marker({
+	position: {lat: 40.8054491, lng: -73.9654415}, map: map
+});
+}
+
+  </script>
+  <h4 class="dine">Come Dine With Us</h4>
+<div id="dine-with-us">
+
+</div>
+<div id="reviews-wrapper">
+<h4 class="reviews">Customer Reviews</h4>
+<img src="img/jerry.jpg" class="reviews-img">
+<div id="reviews-text">
+	<p class="main-quote">"Big lettuce, big carrots, tomatoes like volleyballs."</p>
+	<p class="quote-attr">— Jerry Seinfeld, on The BIG Salad</p>
+</div>	
+</div>
+<div id="footer">&copy; 2016 Monk's Cafe</div>
+</div>
+  </body>
+</html>
